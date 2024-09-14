@@ -1,5 +1,4 @@
 /* Reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -73,8 +72,10 @@ nav ul {
 
 main {
     flex: 1;
-    padding-right: 120px;
-    padding-left: 120px;
+}
+
+section {
+    padding: 100px 120px;
 }
 
 .hero {
