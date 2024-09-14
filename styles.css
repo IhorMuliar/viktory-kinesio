@@ -81,6 +81,7 @@ section {
 .hero {
     display: flex;
     gap: 30px;
+    justify-content: space-between;
 }
 
 .intro {
@@ -97,6 +98,48 @@ section {
     display: flex;
     flex-direction: column;
 }
+
+.sub-description {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.features ul {
+    display: flex;
+    gap: 40px;
+}
+
+.call-to-action {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.faq {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 footer {
     padding: 100px 120px;
