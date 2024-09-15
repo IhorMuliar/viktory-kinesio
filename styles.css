@@ -148,9 +148,63 @@ section.hero {
     row-gap: var(--space-1);
 }
 
-.call-to-action {
+section.testimonial {
+    max-width: none;
+    padding: 0;
+}
+
+.testimonial {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--system);
+}
+
+.testimonial .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-4);
+    max-width: 1440px;
+    width: 100%;
+    padding: var(--space-5) var(--space-6);
+}
+
+.testimonial .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.reviews {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.review {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.call-to-action .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     column-gap: var(--space-3);
+    background-color: var(--system);
+    padding: var(--space-4);
+    border-radius: 24px;
+}
+
+.call-to-action .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    width: 50%;
 }
 
 .faq {
