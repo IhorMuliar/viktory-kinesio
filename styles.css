@@ -8,12 +8,19 @@ body {
 
 header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+header .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 28px 120px;
     max-width: 1440px;
     width: 100%;
-    background-color: var(--primary);
     color: var(--white);
 }
 
@@ -45,12 +52,25 @@ section {
     padding: 100px 120px;
 }
 
+section.hero {
+    max-width: none;
+    padding: 0;
+}
+
 .hero {
     display: flex;
-    gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--primary);
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1440px;
+    padding: 100px 120px;
     color: var(--white);
 }
 
@@ -136,14 +156,19 @@ section {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+footer .container {
     max-width: 1440px;
     width: 100%;
     padding: 100px 120px;
-    background-color: var(--primary);
     color: var(--white);
 }
 
 footer a {
     color: var(--white);
-    
 }
