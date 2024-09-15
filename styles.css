@@ -18,7 +18,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 28px 120px;
+    padding: 28px var(--space-6);
     max-width: 1440px;
     width: 100%;
     color: var(--white);
@@ -26,7 +26,7 @@ header .container {
 
 nav ul {
     display: flex;
-    gap: 40px;
+    gap: var(--space-3);
 }
 
 nav a {
@@ -49,7 +49,7 @@ main {
 section {
     max-width: 1440px;
     width: 100%;
-    padding: 100px 120px;
+    padding: var(--space-5) var(--space-6);
 }
 
 section.hero {
@@ -68,9 +68,9 @@ section.hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: var(--space-2);
     max-width: 1440px;
-    padding: 100px 120px;
+    padding: var(--space-5) var(--space-6);
     color: var(--white);
 }
 
@@ -78,31 +78,31 @@ section.hero {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 40px;
+    row-gap: var(--space-3);
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    row-gap: 64px;
+    row-gap: var(--space-4);
 }
 
 .content .text-container {
     display: flex;
     flex-direction: column;
-    row-gap: 60px;
+    row-gap: var(--space-4);
 }
 
 .content .text-container .description {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 400px;
 }
 
 .content .articles {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--space-3);
 }
 
 .content .articles article {
@@ -112,7 +112,9 @@ section.hero {
 }
 
 .article-text {
-    row-gap: 28px;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--space-2);
 }
 
 .features {
@@ -120,12 +122,14 @@ section.hero {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    row-gap: 60px;
+    row-gap: var(--space-4);
 }
 
 .features ul {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    gap: var(--space-3);
+    width: 100%;
 }
 
 .features li {
@@ -133,7 +137,7 @@ section.hero {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 24px;
+    row-gap: var(--space-2);
 }
 
 .features div {
@@ -141,13 +145,12 @@ section.hero {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 16px;
+    row-gap: var(--space-1);
 }
 
 .call-to-action {
     display: flex;
-    column-gap: 40px;
-    padding: 60px;
+    column-gap: var(--space-3);
 }
 
 .faq {
@@ -165,7 +168,7 @@ footer {
 footer .container {
     max-width: 1440px;
     width: 100%;
-    padding: 100px 120px;
+    padding: var(--space-5) var(--space-6);
     color: var(--white);
 }
 
