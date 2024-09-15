@@ -1,61 +1,9 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Inter Tight', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-ul {
-    list-style: none;
-}
-
-/* Typography */
-.bold-xl {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 64px;
-}
-
-.bold-l {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 38px;
-}
-
-.bold-m {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-}
-
-.regular-m {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.regular-s {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-/* Main styles */
 body {
     height: 100%;
-}
-
-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -63,6 +11,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 28px 120px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--white);
 }
 
 nav ul {
@@ -70,11 +22,26 @@ nav ul {
     gap: 10px;
 }
 
+nav a {
+    color: var(--white);
+}
+
+nav a:hover, nav a:active {
+    color: var(--primary-content);
+    border-color: var(--primary-content);
+}
+
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 1;
+    width: 100%;
 }
 
 section {
+    max-width: 1200px;
+    width: 100%;
     padding: 100px 120px;
 }
 
@@ -82,9 +49,11 @@ section {
     display: flex;
     gap: 30px;
     justify-content: space-between;
+    background-color: var(--primary);
+    color: var(--white);
 }
 
-.intro {
+.hero .intro {
     display: flex;
     flex-direction: column;
 }
@@ -94,24 +63,24 @@ section {
     flex-direction: column;
 }
 
-.description {
+.content .text-container {
     display: flex;
     flex-direction: column;
 }
 
-.sub-description {
+.content .text-container .description {
     display: flex;
     align-items: center;
     gap: 400px;
 }
 
-.image-container {
+.content .articles {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.image {
+.content .articles article {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -140,7 +109,8 @@ section {
     justify-content: space-between;
 }
 
-
 footer {
+    max-width: 1200px;
+    width: 100%;
     padding: 100px 120px;
 }
