@@ -1,16 +1,18 @@
 import React from 'react'
 
+import clock from "../assets/clock.jpg";
+
 export const Features = () => {
   return (
-    <section class="features">
-        <h2 class="bold-xl">
+    <section className="features">
+        <h2 className="bold-xl">
             Title
         </h2>
         <ul>
             <li>
-                <img src="assets/icon.jpg" alt="clock" />
+                <img src={clock} alt="clock" />
                 <div>
-                    <h3 class="bold-m">
+                    <h3 className="bold-m">
                         Subtitle
                     </h3>
                     <p>
@@ -19,9 +21,9 @@ export const Features = () => {
                 </div>
             </li>
             <li>
-                <img src="assets/icon.jpg" alt="clock" />
+                <img src={clock} alt="clock" />
                 <div>
-                    <h3 class="bold-m">
+                    <h3 className="bold-m">
                         Subtitle
                     </h3>
                     <p>
@@ -30,9 +32,9 @@ export const Features = () => {
                 </div>
             </li>
             <li>
-                <img src="assets/icon.jpg" alt="clock" />
+                <img src={clock} alt="clock" />
                 <div>
-                    <h3 class="bold-m">
+                    <h3 className="bold-m">
                         Subtitle
                     </h3>
                     <p>

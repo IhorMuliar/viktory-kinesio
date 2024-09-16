@@ -2,11 +2,11 @@ import React from 'react'
 
 export const Faq = () => {
   return (
-    <section class="faq">
-        <h2 class="bold-xl">
+    <section className="faq">
+        <h2 className="bold-xl">
             Title 2
         </h2>
-        <div class="questions">
+        <div className="questions">
             <p>
                 text
             </p>

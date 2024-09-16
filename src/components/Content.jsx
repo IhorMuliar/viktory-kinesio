@@ -1,13 +1,15 @@
 import React from 'react'
 
+import image from "../assets/image.jpg";
+
 export const Content = () => {
   return (
-    <section class="content">
-                <div class="text-container">
-                    <h2 class="bold-xl">
+    <section className="content">
+                <div className="text-container">
+                    <h2 className="bold-xl">
                         The title is what the block is about
                     </h2>
-                    <div class="description">
+                    <div className="description">
                         <p>
                             Short description. Use 1-2 sentences in 2-4 lines
                         </p>
@@ -16,11 +18,11 @@ export const Content = () => {
                         </p>
                     </div>
                 </div>
-                <div class="articles">
+                <div className="articles">
                     <article>
-                        <img src="assets/image.jpg" alt="image" />
-                        <div class="article-text">
-                            <h3 class="bold-l">
+                        <img src={image} alt="image" />
+                        <div className="article-text">
+                            <h3 className="bold-l">
                                 Subtitle. The font cone can be larger
                             </h3>
                             <p>
@@ -29,9 +31,9 @@ export const Content = () => {
                         </div>
                     </article>
                     <article>
-                        <img src="assets/image.jpg" alt="image" />
-                        <div class="article-text">
-                            <h3 class="bold-l">
+                        <img src={image} alt="image" />
+                        <div className="article-text">
+                            <h3 className="bold-l">
                                 Subtitle. The font cone can be larger
                             </h3>
                             <p>

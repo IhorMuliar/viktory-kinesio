@@ -1,10 +1,12 @@
 import React from 'react'
 
+import logo from "../assets/logo.png";
+
 export const Footer = () => {
   return (
     <footer>
-        <div class="container">
-            <img src="assets/logo.png" alt="logo" />
+        <div className="container">
+            <img src={logo} alt="logo" />
             <p>2024</p>
             <a>
                 <img src="" alt="instagram" />
