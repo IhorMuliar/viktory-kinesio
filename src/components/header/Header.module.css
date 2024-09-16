@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px var(--space-6);
+    max-width: 1440px;
+    width: 100%;
+    color: var(--white);
+}
+
+nav ul {
+    display: flex;
+    gap: var(--space-3);
+}
+
+nav a {
+    color: var(--white);
+}
+
+nav a:hover, nav a:active {
+    color: var(--primary-content);
+    border-color: var(--primary-content);
+}

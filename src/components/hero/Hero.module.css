@@ -1,0 +1,28 @@
+section.hero {
+    max-width: none;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-2);
+    max-width: 1440px;
+    padding: var(--space-5) var(--space-6);
+    color: var(--white);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: var(--space-3);
+}

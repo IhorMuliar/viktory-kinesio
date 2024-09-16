@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: var(--space-5) var(--space-6);
+    color: var(--white);
+}
+
+footer a {
+    color: var(--white);
+}

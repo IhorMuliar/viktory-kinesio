@@ -1,0 +1,43 @@
+button {
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px
+}
+
+button.size-l {
+    padding: 16px 24px;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+button.size-m {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+button.primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+}
+
+button.primary.reversed {
+    background-color: var(--white);
+    color: var(--primary);
+    border: none;
+}
+
+button.secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+button.clear {
+    background: transparent;
+    color: var(--primary);
+    border: none;
+}
