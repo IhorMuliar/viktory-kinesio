@@ -11,19 +11,19 @@ export const Header = () => {
         <nav>
           <ul>
             <li>
-              <a className="regular-s" href="#">Link 1</a>
+              <a className="reversed regular-s" href="#">Link 1</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Link 2</a>
+              <a className="reversed regular-s" href="#">Link 2</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Link 3</a>
+              <a className="reversed regular-s" href="#">Link 3</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Link 4</a>
+              <a className="reversed regular-s" href="#">Link 4</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Link 5</a>
+              <a className="reversed regular-s" href="#">Link 5</a>
             </li>
           </ul>
         </nav>

@@ -20,12 +20,3 @@ nav ul {
     display: flex;
     gap: var(--space-3);
 }
-
-nav a {
-    color: var(--white);
-}
-
-nav a:hover, nav a:active {
-    color: var(--primary-content);
-    border-color: var(--primary-content);
-}

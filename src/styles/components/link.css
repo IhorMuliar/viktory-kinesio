@@ -10,3 +10,12 @@ a:hover, a:active {
 a:active {
     opacity: 0.8;
 }
+
+a.reversed {
+    color: var(--white);
+}
+
+a.reversed:hover, a.reversed:active {
+    color: var(--primary-content);
+    border-color: var(--primary-content);
+}

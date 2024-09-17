@@ -9,13 +9,13 @@ export const Footer = () => {
       <div className={styles.container}>
         <img src={logo} alt="logo"/>
         <p>2024</p>
-        <a>
+        <a className="reversed">
           <img src="" alt="instagram"/>
         </a>
-        <a>
+        <a className="reversed">
           <img src="" alt="instagram"/>
         </a>
-        <a>
+        <a className="reversed">
           <img src="" alt="instagram"/>
         </a>
       </div>

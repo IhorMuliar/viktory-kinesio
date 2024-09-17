@@ -11,7 +11,3 @@ footer {
     padding: var(--space-5) var(--space-6);
     color: var(--white);
 }
-
-footer a {
-    color: var(--white);
-}
