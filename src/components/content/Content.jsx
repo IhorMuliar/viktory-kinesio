@@ -1,6 +1,5 @@
 import React from 'react'
 
-import child from "../../assets/images/child.jpg";
 import daughter from "../../assets/images/daughter.jpg";
 import styles from "./Content.module.css";
 
@@ -23,13 +22,13 @@ const Content = () => {
               quam non bibendum congue. Suspendisse a felis dolor.
             </p>
           </div>
-          <img src={child} alt="test image"/>
+          <img src={daughter} alt="test"/>
         </div>
         <div className={styles.article}>
-          <img src={daughter} alt="test image"/>
+          <img src={daughter} alt="test"/>
           <div className={`${styles.text_container} ${styles.left} `}>
             <h3 className="bold-l">
-              Я розумію, що я можу.
+              Я розумію, що я можу
             </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut porttitor dui. Quisque volutpat felis vel
