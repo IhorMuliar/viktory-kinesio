@@ -1,5 +1,3 @@
-import React from 'react'
-
 import daughter from "../../assets/images/daughter.jpg";
 import styles from "./Content.module.css";
 

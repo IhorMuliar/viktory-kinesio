@@ -1,5 +1,3 @@
-import React from 'react'
-
 import image from "../../assets/images/hero-portrait.jpg";
 import styles from "./Hero.module.css";
 
