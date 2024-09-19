@@ -1,12 +1,16 @@
 footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: var(--soft-sage-green);
+  display: flex;
+  justify-content: center;
+  max-width: none;
+  width: 100%;
+  background-color: #FFD8F9;
 }
 
 .container {
-    max-width: 1440px;
-    width: 100%;
-    padding: var(--space-5) var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  padding: var(--space-2);
 }
