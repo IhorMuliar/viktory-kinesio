@@ -15,8 +15,8 @@ function App() {
       <Content/>
       <Services/>
       <Process />
-      <Testimonial/>
       <Faq/>
+      <Testimonial/>
       <Footer/>
     </>
   )
