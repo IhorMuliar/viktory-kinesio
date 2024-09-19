@@ -1,29 +1,34 @@
 import React from 'react'
 
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.svg';
 import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <header>
       <div className={styles.container}>
-        <img src={logo} alt="logo"/>
+        <a href="/" className={styles.logo}>
+          <img src={logo} alt="logo"/>
+        </a>
         <nav>
-          <ul>
+          <ul className={styles.navigation_links}>
             <li>
-              <a className="regular-s" href="#">Link 1</a>
+              <a className="regular-s" href="#">Про лікаря</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Link 2</a>
+              <a className="regular-s" href="#">Спеціалізація</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Link 3</a>
+              <a className="regular-s" href="#">Відгуки</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Link 4</a>
+              <a className="regular-s" href="#">Питання та відповіді</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Link 5</a>
+              <a className="regular-s" href="#">Контакти</a>
+            </li>
+            <li>
+              <button className="size-m secondary">Запис</button>
             </li>
           </ul>
         </nav>
