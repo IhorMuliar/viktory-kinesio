@@ -1,9 +1,9 @@
 import React from 'react'
 
-import clock from "../../assets/clock.jpg";
+import clock from "../../assets/images/clock.jpg";
 import styles from "./Features.module.css";
 
-export const Features = () => {
+const Features = () => {
   return (
     <section className={styles.features}>
       <h2 className="bold-xl">
@@ -47,3 +47,5 @@ export const Features = () => {
     </section>
   )
 }
+
+export default Features;

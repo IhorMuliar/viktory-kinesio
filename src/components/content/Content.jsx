@@ -1,9 +1,9 @@
 import React from 'react'
 
-import image from "../../assets/image.jpg";
+import image from "../../assets/images/image.jpg";
 import styles from "./Content.module.css";
 
-export const Content = () => {
+const Content = () => {
   return (
     <section className={styles.content}>
       <div className={styles.text_container}>
@@ -47,3 +47,5 @@ export const Content = () => {
     </section>
   )
 }
+
+export default Content;

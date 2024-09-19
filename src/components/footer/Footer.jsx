@@ -1,24 +1,26 @@
 import React from 'react'
 
-import logo from "../../assets/logo.png";
+import logo from "../../assets/images/logo.png";
 import styles from "./Footer.module.css";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer>
       <div className={styles.container}>
         <img src={logo} alt="logo"/>
         <p>2024</p>
-        <a className="reversed">
+        <a>
           <img src="" alt="instagram"/>
         </a>
-        <a className="reversed">
+        <a>
           <img src="" alt="instagram"/>
         </a>
-        <a className="reversed">
+        <a>
           <img src="" alt="instagram"/>
         </a>
       </div>
     </footer>
   )
 }
+
+export default Footer;

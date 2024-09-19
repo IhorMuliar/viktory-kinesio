@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Testimonial.module.css';
 
-export const Testimonial = () => {
+const Testimonial = () => {
   return (
     <section className={styles.testimonial}>
       <div className={styles.container}>
@@ -33,3 +33,5 @@ export const Testimonial = () => {
     </section>
   )
 }
+
+export default Testimonial;

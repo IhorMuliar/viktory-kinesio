@@ -7,7 +7,7 @@ section.hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--primary);
+    background-color: var(--soft-sage-green);
 }
 
 .container {
@@ -17,7 +17,7 @@ section.hero {
     gap: var(--space-2);
     max-width: 1440px;
     padding: var(--space-5) var(--space-6);
-    color: var(--white);
+    color: var(--black);
 }
 
 .intro {

@@ -3,7 +3,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--primary);
+    background-color: var(--soft-sage-green);
 }
 
 .container {
@@ -13,7 +13,6 @@ header {
     padding: 28px var(--space-6);
     max-width: 1440px;
     width: 100%;
-    color: var(--white);
 }
 
 nav ul {

@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Call-to-action.module.css';
 
-export const CallToAction = () => {
+const CallToAction = () => {
   return (
     <section>
       <div className={styles.container}>
@@ -22,3 +22,5 @@ export const CallToAction = () => {
     </section>
   )
 }
+
+export default CallToAction;

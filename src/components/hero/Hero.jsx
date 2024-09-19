@@ -1,9 +1,9 @@
 import React from 'react'
 
-import image from "../../assets/image.jpg";
+import image from "../../assets/images/image.jpg";
 import styles from "./Hero.module.css";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
@@ -23,3 +23,5 @@ export const Hero = () => {
     </section>
   )
 }
+
+export default Hero;

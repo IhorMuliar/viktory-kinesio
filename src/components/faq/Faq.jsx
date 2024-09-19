@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './Faq.module.css';
 
-export const Faq = () => {
+const Faq = () => {
   return (
     <section className={styles.faq}>
       <h2 className="bold-xl">
@@ -19,3 +19,5 @@ export const Faq = () => {
     </section>
   )
 }
+
+export default Faq;
