@@ -1,48 +1,39 @@
 import React from 'react'
 
-import image from "../../assets/images/image.jpg";
+import child from "../../assets/images/child.jpg";
+import daughter from "../../assets/images/daughter.jpg";
 import styles from "./Content.module.css";
 
 const Content = () => {
   return (
     <section className={styles.content}>
-      <div className={styles.text_container}>
-        <h2 className="bold-xl">
-          The title is what the block is about
-        </h2>
-        <div className={styles.description}>
-          <p>
-            Short description. Use 1-2 sentences in 2-4 lines
-          </p>
-          <p>
-            The description is the basic meaning. Use 1-2 sentences in 1-3 lines if alignment is centered. With a large
-            amount of text, use the second type of content alignment
-          </p>
-        </div>
-      </div>
+      <h2 className="bold-xl">
+        Ліцензований терапевт у Києві
+      </h2>
       <div className={styles.articles}>
-        <article>
-          <img src={image} alt="image"/>
-          <div className={styles.text_container}>
+        <div className={styles.article}>
+          <div className={`${styles.text_container} ${styles.right} `}>
             <h3 className="bold-l">
-              Subtitle. The font cone can be larger
+              Я ніколи не вважала це своєю місією
             </h3>
             <p>
-              Description in 3-5 lines
+              Але я зрозуміла, що хочу допомогати людям ще у 5 років. Коли ще була маленькою, то допомогла бабусі
+              вирішити проблему з коліном. В той момент це була гра для мене.
             </p>
           </div>
-        </article>
-        <article>
-          <img src={image} alt="image"/>
-          <div className={styles.text_container}>
+          <img src={child} alt="test image"/>
+        </div>
+        <div className={styles.article}>
+          <img src={daughter} alt="test image"/>
+          <div className={`${styles.text_container} ${styles.left} `}>
             <h3 className="bold-l">
-              Subtitle. The font cone can be larger
+              Я розумію, що я можу.
             </h3>
             <p>
-              Description in 3-5 lines
+              Людина - це набір однакових нот, а я їми граю. Але в моїх руках це завжди інша та індивідуальна симфонія.
             </p>
           </div>
-        </article>
+        </div>
       </div>
     </section>
   )
