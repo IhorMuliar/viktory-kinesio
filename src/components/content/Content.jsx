@@ -17,8 +17,10 @@ const Content = () => {
               Я ніколи не вважала це своєю місією
             </h3>
             <p>
-              Але я зрозуміла, що хочу допомогати людям ще у 5 років. Коли ще була маленькою, то допомогла бабусі
-              вирішити проблему з коліном. В той момент це була гра для мене.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut porttitor dui. Quisque volutpat felis vel
+              est accumsan, non efficitur mi suscipit. In blandit nunc urna, a accumsan sapien mattis vel. Nam interdum
+              lorem sed est suscipit, id euismod risus dictum. Nunc et convallis justo, et vehicula metus. Duis pretium
+              quam non bibendum congue. Suspendisse a felis dolor.
             </p>
           </div>
           <img src={child} alt="test image"/>
@@ -30,7 +32,10 @@ const Content = () => {
               Я розумію, що я можу.
             </h3>
             <p>
-              Людина - це набір однакових нот, а я їми граю. Але в моїх руках це завжди інша та індивідуальна симфонія.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut porttitor dui. Quisque volutpat felis vel
+              est accumsan, non efficitur mi suscipit. In blandit nunc urna, a accumsan sapien mattis vel. Nam interdum
+              lorem sed est suscipit, id euismod risus dictum. Nunc et convallis justo, et vehicula metus. Duis pretium
+              quam non bibendum congue. Suspendisse a felis dolor.
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Header from "./components/header/Header";
 import Hero from './components/hero/Hero';
 import Content from './components/content/Content';
-import Features from './components/feautures/Features';
+import Services from './components/feautures/Services';
 import Testimonial from './components/testimonial/Testimonial';
 import CallToAction from './components/call-to-action/Call-to-action';
 import Faq from './components/faq/Faq';
@@ -13,7 +13,7 @@ function App() {
       <Header/>
       <Hero/>
       <Content/>
-      <Features/>
+      <Services/>
       <Testimonial/>
       <CallToAction/>
       <Faq/>
