@@ -1,24 +1,23 @@
 import React from 'react'
 
-import image from "../../assets/images/image.jpg";
+import image from "../../assets/images/hero-portrait.jpg";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.container}>
-        <div className={styles.intro}>
-          <h1 className="bold-xl">
-            The title is the main point of the sentence
-          </h1>
-          <p>
-            Description a short transcript of the main sentence. Use 1-2 sentences in 1-3 lines.
-          </p>
-          <button className="primary size-l primary reversed">
-            Contact
-          </button>
-        </div>
-        <img src={image} alt="image test"/>
+      <img src={image} alt="portrait image"/>
+      <div className={styles.intro}>
+        <h1 className="bold-xl">
+          Людина - це набір однакових нот, а я їми граю.
+        </h1>
+        <p>
+          Кінезілогія, остеопатія, психокінезілогія, цілительство, китайська традиційна медицина, енергопатія, мабуть,
+          ще багато.
+        </p>
+        <button className="primary size-l secondary">
+          Записатись на косультацію
+        </button>
       </div>
     </section>
   )
