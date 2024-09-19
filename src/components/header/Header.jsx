@@ -19,10 +19,10 @@ const Header = () => {
               <a className="regular-s" href="#">Спеціалізація</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Відгуки</a>
+              <a className="regular-s" href="#">Питання та відповіді</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Питання та відповіді</a>
+              <a className="regular-s" href="#">Відгуки</a>
             </li>
             <li>
               <a className="regular-s" href="#">Контакти</a>
