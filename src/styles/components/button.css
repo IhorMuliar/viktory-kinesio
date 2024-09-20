@@ -1,43 +1,52 @@
 button {
-    border-radius: 12px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 300px;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 button.size-l {
-    padding: 16px 24px;
-    font-size: 18px;
-    line-height: 26px;
+  min-width: 150px;
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 button.size-m {
-    padding: 10px 16px;
-    font-size: 14px;
-    line-height: 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 button.primary {
-    background-color: var(--primary);
-    color: var(--white);
-    border: none;
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
 }
 
 button.primary.reversed {
-    background-color: var(--white);
-    color: var(--primary);
-    border: none;
+  background-color: var(--white);
+  color: var(--primary);
+  border: none;
+}
+
+button.primary:hover {
+  opacity: 0.8;
 }
 
 button.secondary {
-    background: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 
 button.clear {
-    background: transparent;
-    color: var(--primary);
-    border: none;
+  background: transparent;
+  color: var(--primary);
+  border: none;
 }

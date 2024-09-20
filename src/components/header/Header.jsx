@@ -26,7 +26,7 @@ const Header = () => {
               <a className="regular-s" href="#">Контакти</a>
             </li>
             <li>
-              <button className="size-m secondary">Запис</button>
+              <button className="size-l primary">Запис</button>
             </li>
           </ul>
         </nav>

@@ -6,6 +6,10 @@ header {
   background-color: var(--soft-sage-green);
 }
 
+nav {
+  font-size: 14px;
+}
+
 .container {
   display: flex;
   justify-content: space-between;

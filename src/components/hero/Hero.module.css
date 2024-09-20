@@ -6,6 +6,11 @@
   padding-top: 50px;
 }
 
+.hero img {
+  max-width: 600px;
+  border-radius: 70px;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -15,7 +20,7 @@
 
 .intro h1 {
   position: relative;
-  right: 90px;
+  right: 100px;
 }
 
 .intro i {
@@ -25,7 +30,7 @@
   line-height: 38px;
 }
 
-.hero img {
-  max-width: 600px;
-  border-radius: 70px;
+.intro button {
+  position: relative;
+  right: 80px;
 }
