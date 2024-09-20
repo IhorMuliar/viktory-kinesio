@@ -5,27 +5,11 @@
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 1px;
-}
-
-html.light {
+  font-family: 'Proxima Nova', sans-serif;
   font-weight: 300;
-}
-
-html.medium {
-  font-weight: 500;
-}
-
-html.bold {
-  font-weight: 700;
-}
-
-html.black {
-  font-weight: 900;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 ul {

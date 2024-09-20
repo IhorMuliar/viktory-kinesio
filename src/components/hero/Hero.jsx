@@ -6,13 +6,13 @@ const Hero = () => {
     <section className={styles.hero}>
       <img src={image} alt="portrait image"/>
       <div className={styles.intro}>
-        <h1 className="bold-xl">
+        <h1>
           Людина - це набір однакових нот, а я їми граю.
         </h1>
-        <p>
+        <i>
           Кінезілогія, остеопатія, психокінезілогія, цілительство, китайська традиційна медицина, енергопатія, мабуть,
           ще багато.
-        </p>
+        </i>
         <button className="primary size-l secondary">
           Записатись на косультацію
         </button>

@@ -18,9 +18,14 @@
   right: 90px;
 }
 
+.intro i {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 38px;
+}
+
 .hero img {
   max-width: 600px;
-  border: 3px solid var(--primary);
-  border-top-left-radius: 400px;
-  border-top-right-radius: 400px;
+  border-radius: 70px;
 }

@@ -1,29 +1,20 @@
-.bold-xl {
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 64px;
+h1 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 300;
+  font-size: 71px;
+  line-height: 71px;
 }
 
-.bold-l {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 38px;
+h2 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 47px;
 }
 
-.bold-m {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-}
-
-.regular-m {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.regular-s {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+h3 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 38px;
 }
