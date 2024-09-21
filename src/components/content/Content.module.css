@@ -18,8 +18,15 @@
   gap: var(--space-4);
 }
 
+.article h3 span {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .article img {
-  max-height: 380px;
+  width: 400px;
   border: 2px solid var(--primary);
   border-radius: 70px;
 }

@@ -9,9 +9,9 @@ const Content = () => {
       </h2>
       <div className={styles.articles}>
         <div className={styles.article}>
-          <div className={`${styles.text_container} ${styles.right} `}>
+          <div className={`${styles.text_container} ${styles.right}`}>
             <h3 className="bold-l">
-              Я ніколи не вважала це своєю місією
+              Я ніколи <span>не вважала</span> це своєю місією
             </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut porttitor dui. Quisque volutpat felis vel
@@ -24,9 +24,9 @@ const Content = () => {
         </div>
         <div className={styles.article}>
           <img src={daughter} alt="test"/>
-          <div className={`${styles.text_container} ${styles.left} `}>
+          <div className={`${styles.text_container} ${styles.left}`}>
             <h3 className="bold-l">
-              Я розумію, що я можу
+              Я розумію, <span>що</span> я можу
             </h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut porttitor dui. Quisque volutpat felis vel
