@@ -6,18 +6,20 @@ import Testimonial from './components/testimonial/Testimonial';
 import Process from './components/process/Process';
 import Faq from './components/faq/Faq';
 import Footer from './components/footer/Footer';
+import Contacts from "./components/contacts/Contacts";
 
 function App() {
   return (
     <>
-      <Header/>
-      <Hero/>
-      <Content/>
-      <Services/>
+      <Header />
+      <Hero />
+      <Content />
+      <Services />
       <Process />
-      <Faq/>
-      <Testimonial/>
-      <Footer/>
+      <Faq />
+      <Testimonial />
+      <Contacts />
+      <Footer />
     </>
   )
 }

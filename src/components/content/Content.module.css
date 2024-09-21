@@ -27,7 +27,6 @@
 
 .article img {
   width: 400px;
-  border: 2px solid var(--primary);
   border-radius: 70px;
 }
 
