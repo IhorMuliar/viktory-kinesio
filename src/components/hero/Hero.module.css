@@ -23,11 +23,9 @@
   right: 100px;
 }
 
-.intro i {
-  /*font-family: 'Cormorant Garamond', sans-serif;*/
-  font-weight: 300;
-  font-size: 33px;
-  line-height: 38px;
+.intro p {
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .intro button {
