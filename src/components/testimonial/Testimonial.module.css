@@ -1,24 +1,10 @@
-section.testimonial {
-  max-width: none;
-  padding: 0;
-}
-
 .testimonial {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--soft-sage-green);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: var(--space-4);
-  max-width: 1440px;
-  width: 100%;
-  padding: var(--space-5) var(--space-6);
+  background-color: var(--soft-sage-green);
 }
 
 .text_container {
@@ -28,21 +14,134 @@ section.testimonial {
   gap: var(--space-2);
 }
 
-.review {
+.testimonial ul {
+  position: relative;
+  width: 100%;
+  height: 500px
+}
+
+.testimonial li {
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  overflow-y: hidden;
+  border-radius: 20px;
+  background-color: var(--white);
+  padding: var(--space-2);
+  box-shadow: 0 4px 6px #0000001a, 0 1px 6px #0003;
+}
+
+.testimonial li.first {
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transform: translateX(30%);
+}
+
+.testimonial li.second {
+  left: 50%;
+  top: 15%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.testimonial li.third {
+  right: 0;
+  top: 0;
+  z-index: 1;
+  transform: translateX(-30%);
+}
+
+.testimonial li:hover {
+  overflow-y: scroll;
+  z-index: 10000;
+}
+
+.imessage {
+  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  padding: 30px;
-  border-radius: 10px;
-  font-size: 20px;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.review img {
-  margin-bottom: auto;
-  margin-top: 0;
+.from_me_container, .from_them_container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.review p {
-  max-width: 700px;
+.imessage p {
+  border-radius: 1.15rem;
+  line-height: 1.25;
+  max-width: 75%;
+  padding: 0.5rem .875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.imessage p::before,
+.imessage p::after {
+  bottom: -0.1rem;
+  content: "";
+  height: 1rem;
+  position: absolute;
+}
+
+.imessage p.from_me {
+  align-self: flex-end;
+  background-color: #248bf5;
+  color: #fff;
+}
+
+.imessage p.from_me::before {
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  border-right: 1rem solid #248bf5;
+  right: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+.imessage p.from_me::after {
+  background-color: #fff;
+  border-bottom-left-radius: 0.5rem;
+  right: -40px;
+  transform:translate(-30px, -2px);
+  width: 10px;
+}
+
+.imessage p[class^="from_"] {
+  width: fit-content;
+}
+
+.imessage p.from_them {
+  align-items: flex-start;
+  background-color: #e5e5ea;
+  color: #000;
+}
+
+.imessage p.from_them:before {
+  border-bottom-right-radius: 0.8rem 0.7rem;
+  border-left: 1rem solid #e5e5ea;
+  left: -0.35rem;
+  transform: translate(0, -0.1rem);
+}
+
+.imessage p.from_them::after {
+  background-color: #fff;
+  border-bottom-right-radius: 0.5rem;
+  left: 20px;
+  transform: translate(-30px, -2px);
+  width: 10px;
+}
+
+.imessage p[class^="from_"].emoji {
+  background: none;
+  font-size: 2.5rem;
+}
+
+.imessage p[class^="from_"].emoji::before {
+  content: none;
+}
+
+.no_tail::before {
+  display: none;
 }
