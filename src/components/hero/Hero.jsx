@@ -13,8 +13,9 @@ const Hero = () => {
           Кінезілогія, остеопатія, психокінезілогія, цілительство, китайська традиційна медицина, енергопатія, мабуть,
           ще багато.
         </i>
-        <button className="primary size-l primary">
-          Запис на косультацію
+        <button className="circle size-l">
+          <div className="background"></div>
+          <span className="text">Запис на косультацію</span>
         </button>
       </div>
     </section>
