@@ -40,18 +40,78 @@ button.primary:hover {
   opacity: 0.8;
 }
 
+/* Secondary */
 button.secondary {
-  background: transparent;
+  position: relative;
+  display: inline-block;
   color: var(--primary);
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
+button.secondary .text {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+button.secondary::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: var(--primary);
+  z-index: -1;
+  transition: height 0.3s ease-in-out;
+}
+
+button.secondary:hover {
+  color: white;
+}
+
+button.secondary:hover .text {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+button.secondary::after {
+  content: 'Запис';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+button.secondary:hover::before {
+  height: 100%;
+}
+
+button.secondary:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Clear */
 button.clear {
   background: transparent;
   color: var(--primary);
   border: none;
 }
 
+/* Circle */
 button.circle {
   display: flex;
   justify-content: center;

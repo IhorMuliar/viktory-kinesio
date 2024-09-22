@@ -3,7 +3,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(--soft-sage-green);
+  /*background-color: var(--soft-sage-green);*/
 }
 
 nav {
@@ -27,7 +27,7 @@ nav {
 }
 
 .logo:hover {
-  border: none;
+  background: none;
 }
 
 .navigation_links {
