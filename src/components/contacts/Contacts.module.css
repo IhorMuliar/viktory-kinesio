@@ -13,6 +13,7 @@
   background-color: #FFD8F9;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 .socials img {
@@ -36,6 +37,7 @@
   background-color: var(--white);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
 
