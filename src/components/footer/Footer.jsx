@@ -1,9 +1,11 @@
 import styles from "./Footer.module.css";
 import logo from "../../assets/images/logo.svg";
+import background from "../../assets/images/footer-bg.svg";
 
 const Footer = () => {
   return (
     <footer>
+      <img src={background} alt="test background" className={styles.background} />
       <div className={styles.container}>
         <ul className={styles.navigation_links}>
           <li>
