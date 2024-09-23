@@ -1,5 +1,6 @@
 import daughter from "../../assets/images/daughter.jpg";
 import styles from "./Content.module.css";
+import AnimatedOnScroll from "../AnimatedOnScroll";
 
 const Content = () => {
   return (
@@ -20,7 +21,9 @@ const Content = () => {
               quam non bibendum congue. Suspendisse a felis dolor.
             </p>
           </div>
-          <img src={daughter} alt="test"/>
+          <AnimatedOnScroll>
+            <img src={daughter} alt="test"/>
+          </AnimatedOnScroll>
         </div>
         <div className={styles.article}>
           <img src={daughter} alt="test"/>
