@@ -1,0 +1,22 @@
+h1 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 400;
+  font-size: 71px;
+  line-height: 71px;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 47px;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 38px;
+}

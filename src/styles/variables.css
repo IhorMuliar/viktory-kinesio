@@ -1,0 +1,20 @@
+:root {
+    /* Colors */
+    --primary: #36153A;
+    --primary-content: #CDC2D8;
+    --primary-light: #66517D;
+    --primary-dark: #34293F;
+    --black: #000000;
+    --white: #FFFFFF;
+    --system: #F7F8FA;
+
+    --soft-sage-green: #C2D4C4;
+
+    /* Spacing */
+    --space-1: 16px;
+    --space-2: 20px;
+    --space-3: 40px;
+    --space-4: 60px;
+    --space-5: 100px;
+    --space-6: 120px;
+}

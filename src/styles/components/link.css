@@ -1,0 +1,24 @@
+a {
+  position: relative;
+  color: var(--black);
+  padding-bottom: 3px;
+}
+
+a {
+  background: linear-gradient(0deg, var(--primary), var(--primary)) no-repeat right bottom / 0 1px;
+  transition: background-size 450ms;
+}
+
+a:where(:hover, :focus-visible) {
+  background-size: 100% 1px;
+  background-position-x: left;
+}
+
+a.reversed {
+  color: var(--white);
+}
+
+a.reversed:hover, a.reversed:active {
+  color: var(--primary-content);
+  border-color: var(--primary-content);
+}

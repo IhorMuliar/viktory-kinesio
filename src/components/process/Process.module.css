@@ -1,0 +1,26 @@
+.process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.process ul {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.process li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  text-align: center;
+  padding: 10px var(--space-1);
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+}
+
+.process li img {
+  max-width: 100px;
+}

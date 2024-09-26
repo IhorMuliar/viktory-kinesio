@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /*background-color: var(--soft-sage-green);*/
+}
+
+nav {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-6);
+  max-width: 1440px;
+  width: 100%;
+}
+
+.logo {
+  max-width: 140px;
+  width: 100%;
+}
+
+.logo:hover {
+  background: none;
+}
+
+.navigation_links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-transform: uppercase;
+}
+
+.navigation_links button {
+  text-transform: uppercase;
+}
