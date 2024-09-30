@@ -1,51 +1,52 @@
-import {useRef, useState} from "react";
+import {useState} from "react";
 
 import "./Accordion.css";
 
-const AccordionItem = ({title, description, isOpen, onClick}) => {
-  const contentHeight = useRef();
+const AccordionItem = ({title, content, index, activeIndex, onItemClick}) => {
+  const isActive = index === activeIndex;
 
   return (
-    <div className={`item ${isOpen ? "open" : ""}`}>
-      <button className="question" onClick={onClick}>
-        <h3 className="content">{title}</h3>
-        <span className="icon" />
-      </button>
+    <div className={`item ${isActive ? 'open' : ''}`} key={title}>
       <div
-        ref={contentHeight}
-        className="answer"
-        style={
-          isOpen
-            ? {height: contentHeight.current.scrollHeight}
-            : {height: "0px"}
-        }
+        className="question"
+        onClick={() => onItemClick(index)}
+        aria-expanded={isActive}
+        aria-controls={`content-${index}`}
       >
-        <p className="content" dangerouslySetInnerHTML={{__html: description}} />
+        <h3>{title}</h3>
+        <span className="icon"/>
       </div>
+      <p
+        dangerouslySetInnerHTML={{__html: content}}
+        id={`content-${index}`}
+        className="content"
+        aria-hidden={!isActive}
+      />
     </div>
-  )
-}
+  );
+};
 
-const Accordion = ({items}) => {
-  const [activeIndex, setActiveIndex] = useState(null);
+export const Accordion = ({items}) => {
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const handleItemClick = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+    setActiveIndex(index === activeIndex ? -1 : index);
   };
 
   return (
-    <div>
+    <>
       {items.map((item, index) => (
         <AccordionItem
           key={index}
           title={item.title}
-          description={item.description}
-          isOpen={activeIndex === index}
-          onClick={() => handleItemClick(index)}
+          content={item.content}
+          index={index}
+          activeIndex={activeIndex}
+          onItemClick={handleItemClick}
         />
       ))}
-    </div>
-  )
+    </>
+  );
 };
 
 export default Accordion;

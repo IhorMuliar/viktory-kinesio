@@ -14,7 +14,7 @@ const Faq = () => {
         </p>
       </div>
       <div className={styles.accordion_container}>
-        <Accordion items={faq} />
+        <Accordion items={faq}/>
       </div>
     </section>
   )
