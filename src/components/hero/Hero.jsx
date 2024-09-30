@@ -1,6 +1,6 @@
 import image from "../../assets/images/hero-portrait.jpg";
+import AnimatedOnScroll from "../shared/AnimatedOnScroll.jsx";
 import styles from "./Hero.module.css";
-import AnimatedOnScroll from "../AnimatedOnScroll";
 
 const Hero = () => {
   return (

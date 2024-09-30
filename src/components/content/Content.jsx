@@ -1,6 +1,6 @@
 import daughter from "../../assets/images/daughter.jpg";
 import styles from "./Content.module.css";
-import AnimatedOnScroll from "../AnimatedOnScroll";
+import AnimatedOnScroll from "../shared/AnimatedOnScroll.jsx";
 
 const Content = () => {
   return (

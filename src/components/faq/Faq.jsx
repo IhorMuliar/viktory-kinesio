@@ -4,7 +4,7 @@ import styles from "./Faq.module.css";
 
 const Faq = () => {
   return (
-    <section className={styles.faq}>
+    <section className={styles.faq} id="faq">
       <div className={styles.text_container}>
         <h2 className="bold-xl">
           Питання та <br/>відповіді
