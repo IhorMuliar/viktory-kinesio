@@ -11,19 +11,19 @@ const Header = () => {
         <nav>
           <ul className={styles.navigation_links}>
             <li>
-              <a className="regular-s" href="#">Про мене</a>
+              <a className="regular-s" href="#content">Про мене</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Спеціалізація</a>
+              <a className="regular-s" href="#services">Спеціалізація</a>
             </li>
             <li>
               <a className="regular-s" href="#faq">Питання та відповіді</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Відгуки</a>
+              <a className="regular-s" href="#testimonial">Відгуки</a>
             </li>
             <li>
-              <a className="regular-s" href="#">Контакти</a>
+              <a className="regular-s" href="#contacts">Контакти</a>
             </li>
             <li>
               <button className="secondary size-l">

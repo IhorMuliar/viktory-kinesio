@@ -43,6 +43,7 @@ section.services {
   justify-content: center;
   row-gap: var(--space-1);
   text-align: center;
+  flex: 1;
 }
 
 .services li img {

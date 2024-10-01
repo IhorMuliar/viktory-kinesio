@@ -2,7 +2,7 @@ import styles from './Testimonial.module.css';
 
 const Testimonial = () => {
   return (
-    <section className={styles.testimonial}>
+    <section className={styles.testimonial} id="testimonial">
       <div className={styles.text_container}>
         <h2 className="bold-xl">Відгуки</h2>
       </div>

@@ -5,7 +5,7 @@ import styles from './Contacts.module.css';
 
 const Contacts = () => {
   return (
-    <section className={styles.contacts}>
+    <section className={styles.contacts} id="contacts">
       {/*<div className={styles.socials}>*/}
       {/*  <img src={instagram} alt="instagram"/>*/}
       {/*  <img src={youtube} alt="youtube"/>*/}
