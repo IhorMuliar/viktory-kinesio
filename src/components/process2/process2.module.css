@@ -47,6 +47,8 @@
   padding: 27px 27px 27px 0;
   border-right: 1px solid black;
   letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 15px;
 }
 
 .title {
