@@ -17,6 +17,9 @@ const Header = () => {
               <a className="regular-s" href="#services">Спеціалізація</a>
             </li>
             <li>
+              <a className="regular-s" href="#process">Процес</a>
+            </li>
+            <li>
               <a className="regular-s" href="#faq">Питання та відповіді</a>
             </li>
             <li>
