@@ -13,7 +13,7 @@ const Process2 = () => {
         <img src={image} alt="test image"/>
         <ul>
           {processes.map((process) => (
-            <li>
+            <li key={process.index}>
               <p className={styles.index}>/{process.index}</p>
               <p className={styles.title}>{process.title}</p>
             </li>
