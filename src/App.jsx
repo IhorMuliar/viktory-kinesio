@@ -17,8 +17,8 @@ function App() {
       <Services />
       <Process2 />
       <Faq />
-      <Testimonial />
-      <Contacts />
+      {/*<Testimonial />*/}
+      {/*<Contacts />*/}
       <Footer />
     </>
   )
