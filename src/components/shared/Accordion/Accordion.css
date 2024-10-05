@@ -21,9 +21,10 @@
 }
 
 .question h3 {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 26px;
+  font-weight: 500;
 }
 
 .icon {
