@@ -2,20 +2,58 @@ footer {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 100px;
   max-width: none;
   width: 100%;
-  border-top-right-radius: 30%;
-  border-top-left-radius: 30%;
+  background-color: #909c87;
+  color: var(--white);
 }
 
-
-.background {
+.footer_rectangles {
   position: absolute;
-  z-index: -1;
-  object-fit: cover;
-  object-position: 50% 20%;
+  top: -90px;
+  left: 0;
   width: 100%;
-  height: 100%;
+}
+
+.rectangle {
+  background-color: #909c87;
+  margin-bottom: 12px;
+  opacity: 0;
+  width: 100%;
+  transform: translateY(100px);
+  transition: transform 0.5s ease, opacity 0.1s ease;
+}
+
+.rectangle_1 {
+  height: 2px;
+  margin-bottom: 14px;
+}
+
+.rectangle_2 { height: 4px; }
+.rectangle_3 { height: 6px; }
+.rectangle_4 { height: 8px; }
+.rectangle_5 { height: 10px; }
+
+.footer_visible .rectangle {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer_visible .rectangle-1 {
+  transition-delay: 0.2s;
+}
+
+.footer_visible .rectangle-2 {
+  transition-delay: 0.4s;
+}
+
+.footer_visible .rectangle-3 {
+  transition-delay: 0.6s;
+}
+
+.footer_visible .rectangle-4 {
+  transition-delay: 0.8s;
 }
 
 .container {
@@ -25,29 +63,64 @@ footer {
   justify-content: center;
   max-width: 1440px;
   width: 100%;
-  padding: 150px var(--space-2) var(--space-4) var(--space-2);
+  padding: var(--space-5) 80px var(--space-2);
   gap: var(--space-3);
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .navigation_links {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: var(--space-2);
 }
 
 .logo {
   max-width: 140px;
   width: 100%;
+  padding: 0;
 }
 
 .logo:hover {
   background: none;
 }
 
-.description {
+.location {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.map {
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 20px;
+}
+
+.address {
+
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: var(--space-2);
+  width: 100%;
+  padding-top: var(--space-2);
+  border-top: 1px solid #ffffff4d;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.socials {
+  display: flex;
+  gap: 5px;
 }
