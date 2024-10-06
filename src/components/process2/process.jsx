@@ -1,11 +1,11 @@
-import styles from "./Process2.module.css";
+import styles from "./process.module.css";
 import liquid from "../../assets/images/liquid.mp4";
 import image from "../../assets/images/hero-portrait.jpg";
 import {processes} from "./constants.js";
 
-const Process2 = () => {
+const Process = () => {
   return (
-    <section className={styles.process2} id="process">
+    <section className={styles.process} id="process">
       <div className={styles.video}>
         <video src={liquid} autoPlay={true} loop={true} muted={true} playsInline={true} preload="auto" />
       </div>
@@ -24,4 +24,4 @@ const Process2 = () => {
   )
 }
 
-export default Process2;
+export default Process;
