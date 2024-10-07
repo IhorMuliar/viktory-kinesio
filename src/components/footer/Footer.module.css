@@ -11,50 +11,22 @@ footer {
 
 .footer_rectangles {
   position: absolute;
-  top: -90px;
+  top: -30px;
   left: 0;
   width: 100%;
 }
 
 .rectangle {
   background-color: #909c87;
-  margin-bottom: 12px;
-  opacity: 0;
-  width: 100%;
-  transform: translateY(100px);
-  transition: transform 0.5s ease, opacity 0.1s ease;
+  opacity: 1;
+  transition-duration: 400ms;
 }
 
-.rectangle_1 {
-  height: 2px;
-  margin-bottom: 14px;
-}
-
+.rectangle_1 { height: 2px; }
 .rectangle_2 { height: 4px; }
 .rectangle_3 { height: 6px; }
 .rectangle_4 { height: 8px; }
 .rectangle_5 { height: 10px; }
-
-.footer_visible .rectangle {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.footer_visible .rectangle-1 {
-  transition-delay: 0.2s;
-}
-
-.footer_visible .rectangle-2 {
-  transition-delay: 0.4s;
-}
-
-.footer_visible .rectangle-3 {
-  transition-delay: 0.6s;
-}
-
-.footer_visible .rectangle-4 {
-  transition-delay: 0.8s;
-}
 
 .container {
   display: flex;

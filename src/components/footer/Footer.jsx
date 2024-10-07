@@ -1,44 +1,30 @@
-import {useEffect, useRef, useState} from "react";
+import {useRef} from "react";
+import {useScroll, useTransform, motion} from "framer-motion";
+
 import styles from "./Footer.module.css";
 import logo from "../../assets/images/logo.svg";
 
 const Footer = () => {
   const footerRef = useRef(null);
-  const [isFooterVisible, setIsFooterVisible] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsFooterVisible(true);
-          } else {
-            setIsFooterVisible(false);
-          }
-        });
-      },
-      {threshold: 0.1}
-    );
-
-    if (footerRef.current) {
-      observer.observe(footerRef.current);
-    }
-
-    return () => {
-      if (footerRef.current) {
-        observer.unobserve(footerRef.current);
-      }
-    };
-  }, []);
+  const {scrollYProgress} = useScroll({
+    target: footerRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY1 = useTransform(scrollYProgress, [0, 1], [0, -110]);
+  const translateY2 = useTransform(scrollYProgress, [0, 1], [0, -90]);
+  const translateY3 = useTransform(scrollYProgress, [0, 1], [0, -70]);
+  const translateY4 = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const translateY5 = useTransform(scrollYProgress, [0, 1], [0, -30]);
 
   return (
     <footer ref={footerRef}>
-      <div className={`${styles.footer_rectangles} ${isFooterVisible ? styles.footer_visible : ''}`}>
-        <div className={`${styles.rectangle} ${styles.rectangle_1}`}></div>
-        <div className={`${styles.rectangle} ${styles.rectangle_2}`}></div>
-        <div className={`${styles.rectangle} ${styles.rectangle_3}`}></div>
-        <div className={`${styles.rectangle} ${styles.rectangle_4}`}></div>
-        <div className={`${styles.rectangle} ${styles.rectangle_5}`}></div>
+      <div className={`${styles.footer_rectangles}`}>
+        <motion.div className={`${styles.rectangle} ${styles.rectangle_1}`} style={{ translateY: translateY1 }}></motion.div>
+        <motion.div className={`${styles.rectangle} ${styles.rectangle_2}`} style={{ translateY: translateY2 }}></motion.div>
+        <motion.div className={`${styles.rectangle} ${styles.rectangle_3}`} style={{ translateY: translateY3 }}></motion.div>
+        <motion.div className={`${styles.rectangle} ${styles.rectangle_4}`} style={{ translateY: translateY4 }}></motion.div>
+        <motion.div className={`${styles.rectangle} ${styles.rectangle_5}`} style={{ translateY: translateY5 }}></motion.div>
       </div>
       <div className={styles.container}>
         <div className={styles.description}>
@@ -74,7 +60,7 @@ const Footer = () => {
             >
             </iframe>
             <p className={styles.address}>
-              кв 70, 2 поверх, 4 під‘їзд,  <br />
+              кв 70, 2 поверх, 4 під‘їзд, <br/>
               Бульвар Марії Приймаченко 8
             </p>
           </div>
