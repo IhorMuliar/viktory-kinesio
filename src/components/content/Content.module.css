@@ -16,6 +16,10 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-4);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 .article h3 span {
