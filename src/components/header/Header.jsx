@@ -59,9 +59,11 @@ const Header = () => {
             <li>
               <a className="regular-s" href="#process">Процес</a>
             </li>
-            <a href="/" className={styles.logo}>
-              <img src={logo} alt="logo"/>
-            </a>
+          </ul>
+          <a href="/" className={styles.logo}>
+            <img src={logo} alt="logo"/>
+          </a>
+          <ul className={styles.navigation_links}>
             <li>
               <a className="regular-s" href="#faq">Питання та відповіді</a>
             </li>
