@@ -26,9 +26,6 @@ const Header = () => {
               <a className="regular-s" href="#testimonial">Відгуки</a>
             </li>
             <li>
-              <a className="regular-s" href="#contacts">Контакти</a>
-            </li>
-            <li>
               <button className="secondary size-l">
                 <span className="text">
                   Запис

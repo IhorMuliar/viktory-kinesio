@@ -47,9 +47,6 @@ const Footer = () => {
             <li>
               <a className="regular-s reversed" href="#testimonial">Відгуки</a>
             </li>
-            <li>
-              <a className="regular-s reversed" href="#contacts">Контакти</a>
-            </li>
           </ul>
           <div className={styles.location}>
             <iframe
@@ -66,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>© 2024 Viktory Kinesio. All rights reserved.</p>
+          <p><span>©</span> 2024 Viktory Kinesio. All rights reserved.</p>
           <div className={styles.socials}>
             <a className="icon-link" href="#">T</a>
             <a className="icon-link" href="#">I</a>

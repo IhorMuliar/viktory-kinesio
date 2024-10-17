@@ -32,10 +32,13 @@ nav {
 .navigation_links {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  text-transform: uppercase;
+  gap: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  /*text-transform: uppercase;*/
 }
 
-.navigation_links button {
-  text-transform: uppercase;
+.navigation_links button span {
+  font-size: 18px;
+  line-height: 25px;
 }

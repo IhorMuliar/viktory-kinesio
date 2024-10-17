@@ -7,21 +7,20 @@ button {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-style: normal;
-  text-transform: uppercase;
 }
 
 button.size-l {
   min-width: 150px;
   padding: 15px 24px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 button.size-m {
   min-width: 150px;
   padding: 10px 16px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 button.primary {

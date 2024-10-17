@@ -10,6 +10,7 @@ html {
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: -.02em;
   scroll-behavior: smooth;
 }
 

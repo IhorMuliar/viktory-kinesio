@@ -12,11 +12,11 @@ const Services = () => {
   });
 
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-88%"]);
-  const xBar = useTransform(scrollYProgress, [0, 1], ["-88%", "1%"]);
+  // const xBar = useTransform(scrollYProgress, [0, 1], ["-88%", "1%"]);
 
   return (
     <section className={styles.services} id="services" ref={targetRef}>
-      <h2 className="bold-xl">Терапевтичні послуги</h2>
+      <h2><span>Терапевтичні</span> послуги</h2>
       <div className={styles.container}>
         <motion.ul style={{x}}>
           {services.map((service, index) => (

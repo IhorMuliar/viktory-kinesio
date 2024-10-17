@@ -6,8 +6,8 @@ import {content} from "./constants.js";
 const Content = () => {
   return (
     <section className={styles.content} id="content">
-      <h2 className="bold-xl">
-        Ліцензований терапевт у Києві
+      <h2>
+        <span>Ліцензований терапевт</span> у Києві
       </h2>
       <div className={styles.articles}>
         {

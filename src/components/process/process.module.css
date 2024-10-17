@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.process h2 {
+  transform: translateY(-100px);
+}
+
 .video {
   position: absolute;
   border-radius: 20px;

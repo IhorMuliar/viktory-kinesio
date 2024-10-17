@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: var(--space-4);
+  row-gap: var(--space-1);
 }
 
 .articles {
@@ -30,7 +30,7 @@
 }
 
 .article img {
-  width: 400px;
+  width: 450px;
   border-radius: 20px;
 }
 
@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   row-gap: var(--space-2);
-  max-width: 400px;
+  max-width: 450px;
 }
 
 .right {

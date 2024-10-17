@@ -6,6 +6,7 @@ import {processes} from "./constants.js";
 const Process = () => {
   return (
     <section className={styles.process} id="process">
+      <h2><span>Як проходить</span> сеанс</h2>
       <div className={styles.video}>
         <video src={liquid} autoPlay={true} loop={true} muted={true} playsInline={true} preload="auto" />
       </div>
