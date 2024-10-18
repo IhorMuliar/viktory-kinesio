@@ -41,12 +41,18 @@
 //
 // export default Header;
 
+import {motion} from "framer-motion";
+
 import logo from '../../assets/images/logo.svg';
 import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <header>
+    <motion.header
+      initial={{translateY: '-100%'}}
+      animate={{translateY: 0}}
+      transition={{duration: 1.2}}
+    >
       <div className={styles.container}>
         <nav>
           <ul className={styles.navigation_links}>
@@ -76,7 +82,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-    </header>
+    </motion.header>
   )
 }
 

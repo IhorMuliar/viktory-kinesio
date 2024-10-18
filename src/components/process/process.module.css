@@ -6,7 +6,12 @@
 }
 
 .process h2 {
-  transform: translateY(-100px);
+  z-index: -1;
+}
+
+.wrapper {
+  display: block;
+  overflow: hidden;
 }
 
 .video {
