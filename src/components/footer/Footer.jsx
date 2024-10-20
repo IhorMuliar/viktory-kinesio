@@ -5,6 +5,7 @@ import styles from "./Footer.module.css";
 import logo from "../../assets/images/logo.svg";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   const footerRef = useRef(null);
 
   const {scrollYProgress} = useScroll({
@@ -28,9 +29,20 @@ const Footer = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.description}>
-          <a href="/" className={styles.logo}>
-            <img src={logo} alt="logo"/>
-          </a>
+          <div className={styles.outro}>
+            <a href="/" className={styles.logo}>
+              <img src={logo} alt="logo"/>
+            </a>
+            <p>
+              Холістичний підхід - це бачення Людини, як цілісної одиниці та системою із великою кількістю звʼязків. Де
+              я не обираю, що важливо, а що ні. Де я кажу, що все має значенні і все на все впливає.
+            </p>
+            <div className={styles.socials}>
+              <a className="icon-link" href="#"><span className={styles.youtube}></span></a>
+              <a className="icon-link" href="#"><span className={styles.telegram}></span></a>
+              <a className="icon-link" href="#"><span className={styles.instagram}></span></a>
+            </div>
+          </div>
           <ul className={styles.navigation_links}>
             <li>
               <a className="regular-s reversed" href="#content">Про мене</a>
@@ -57,18 +69,13 @@ const Footer = () => {
             >
             </iframe>
             <p className={styles.address}>
-              кв 70, 2 поверх, 4 під‘їзд, <br/>
+              Квартира 70, 2 поверх, 4 під‘їзд, <br/>
               Бульвар Марії Приймаченко 8
             </p>
           </div>
         </div>
         <div className={styles.bottom}>
-          <p><span>©</span> 2024 Viktory Kinesio. All rights reserved.</p>
-          <div className={styles.socials}>
-            <a className="icon-link" href="#">T</a>
-            <a className="icon-link" href="#">I</a>
-            <a className="icon-link" href="#">Y</a>
-          </div>
+          <p>Copyright <span>©</span> {currentYear} Viktory Kinesio. All rights reserved.</p>
         </div>
       </div>
     </footer>

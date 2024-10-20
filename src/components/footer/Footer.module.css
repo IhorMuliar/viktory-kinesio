@@ -42,7 +42,17 @@ footer {
 .description {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
   width: 100%;
+}
+
+.outro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+  max-width: 300px;
 }
 
 .navigation_links {
@@ -54,12 +64,16 @@ footer {
 }
 
 .logo {
-  max-width: 140px;
   width: 100%;
   padding: 0;
 }
 
-.logo:hover {
+.logo img {
+  max-width: 140px;
+}
+
+.logo:hover,
+.logo:focus {
   background: none;
 }
 
@@ -82,17 +96,67 @@ footer {
 
 .bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: var(--space-2);
   width: 100%;
   padding-top: var(--space-2);
   border-top: 1px solid #ffffff4d;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .socials {
   display: flex;
   gap: 5px;
+}
+
+.socials a {
+  position: relative;
+  overflow: hidden;
+}
+
+.socials a span {
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  background-size: cover, contain;
+
+}
+
+.youtube {
+  background-image: url('../../assets/images/youtube.svg');
+}
+
+.instagram {
+  background-image: url('../../assets/images/instagram.svg');
+}
+
+.telegram {
+  background-image: url('../../assets/images/telegram.svg');
+}
+
+.socials a:hover:before {
+  position: absolute;
+  content: '';
+  width: 60%;
+  height: 180%;
+  background: #FFD8F9;
+  transform: rotate(45deg);
+  animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.socials a:after {
+  position: absolute;
+  content: '';
+  inset: 3px;
+  background: var(--white);
+  border-radius: 50%;
 }
