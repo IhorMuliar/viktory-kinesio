@@ -119,7 +119,6 @@ footer {
   width: 20px;
   height: 20px;
   background-size: cover, contain;
-
 }
 
 .youtube {
@@ -157,7 +156,7 @@ footer {
   position: absolute;
   content: '';
   inset: 3px;
-  background: var(--white);
+  background: #fdfdf1;
   border-radius: 50%;
 }
 
