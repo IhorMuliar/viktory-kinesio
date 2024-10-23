@@ -41,12 +41,19 @@
 //
 // export default Header;
 
+import {useState} from "react";
 import {motion} from "framer-motion";
 
 import logo from '../../assets/images/logo.svg';
 import styles from './Header.module.css';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <motion.header
       initial={{translateY: '-100%'}}
@@ -69,6 +76,9 @@ const Header = () => {
           <a href="/" className={styles.logo}>
             <img src={logo} alt="logo"/>
           </a>
+          <button className={`${styles.burger} primary size-m`}>
+            -
+          </button>
           <ul className={styles.navigation_links}>
             <li>
               <a className="regular-s" href="#faq">Питання та відповіді</a>

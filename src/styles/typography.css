@@ -27,3 +27,20 @@ h2 span,
 h3 span {
   font-style: italic;
 }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 58px;
+    line-height: 58px;
+  }
+
+  h2 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  h3 {
+    font-size: 26px;
+    line-height: 29px;
+  }
+}

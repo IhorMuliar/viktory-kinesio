@@ -91,3 +91,32 @@ nav {
   font-size: 18px;
   line-height: 25px;
 }
+
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .burger {
+    display: inline-flex;
+  }
+
+  .navigation_links {
+    display: none;
+  }
+}

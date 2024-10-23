@@ -48,3 +48,19 @@
 .left {
   text-align: left;
 }
+
+@media only screen and (max-width: 768px) {
+  .article {
+    flex-direction: column;
+  }
+
+  .article img {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .article img {
+    width: 350px;
+  }
+}

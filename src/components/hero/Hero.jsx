@@ -45,7 +45,7 @@ const Hero = () => {
           animate={hasAnimated ? {opacity: 1, translateY: 0} : {opacity: 0, translateY: '50%'}}
           transition={{duration: 0.6, delay: 0.2}}
         />
-        <div className="text_container">
+        <div className={styles.text_container}>
           <motion.p
             initial={{opacity: 0, translateY: '100%'}}
             animate={hasAnimated ? {opacity: 1, translateY: 0} : {opacity: 0, translateY: '100%'}}
