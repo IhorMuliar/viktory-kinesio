@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
 
 import logo from '../../assets/images/logo.svg';
@@ -13,6 +13,20 @@ const Header = () => {
       ? document.body.style.overflow = "scroll"
       : document.body.style.overflow = "hidden";
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1110) {
+        setMenuOpen(false);
+        document.body.style.overflow = "scroll"
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <motion.header
