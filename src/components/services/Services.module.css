@@ -56,7 +56,6 @@
   margin-top: auto;
 }
 
-
 .icon {
   width: 60px;
   height: 60px;
@@ -66,4 +65,10 @@
   padding: 10px;
   border-radius: 10px;
   background-color: #fdfdf1;
+}
+
+@media only screen and (max-width: 768px) {
+  .services li {
+    max-width: 300px;
+  }
 }
