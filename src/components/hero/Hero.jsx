@@ -85,15 +85,17 @@ const Hero = () => {
           </motion.p>
         </div>
       </div>
-      <motion.button
-        className="circle size-l"
+      <motion.a
+        target="_blank"
+        href="https://t.me/ViktoryKinesio"
+        className="button circle size-l"
         initial={{opacity: 0, translateY: '100%'}}
         animate={hasAnimated ? {opacity: 1, translateY: 0} : {opacity: 0, translateY: '100%'}}
         transition={{duration: 0.6, delay: 0.45}}
       >
         <div className="background"></div>
         <span className="text">Запис на косультацію</span>
-      </motion.button>
+      </motion.a>
     </section>
   )
 }

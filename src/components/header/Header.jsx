@@ -24,20 +24,20 @@ const Header = () => {
         <nav>
           <ul className={styles.navigation_links}>
             <li>
-              <a className="regular-s" href="#content">Про мене</a>
+              <a className="link regular-s" href="#content">Про мене</a>
             </li>
             <li>
-              <a className="regular-s" href="#services">Спеціалізація</a>
+              <a className="link regular-s" href="#services">Спеціалізація</a>
             </li>
             <li>
-              <a className="regular-s" href="#process">Процес</a>
+              <a className="link regular-s" href="#process">Процес</a>
             </li>
           </ul>
-          <a href="/" className={styles.logo}>
+          <a href="/" className={`link ${styles.logo}`}>
             <img src={logo} alt="logo"/>
           </a>
           <button
-            className={`${styles.burger} primary size-m ${menuOpen ? styles.open : ''}`}
+            className={`${styles.button} ${styles.burger} primary size-m ${menuOpen ? styles.open : ''}`}
             onClick={toggleMenu}
           >
             <span></span>
@@ -46,13 +46,13 @@ const Header = () => {
           </button>
           <ul className={styles.navigation_links}>
             <li>
-              <a className="regular-s" href="#faq">Питання та відповіді</a>
+              <a className="link regular-s" href="#faq">Питання та відповіді</a>
             </li>
             <li>
-              <a className="regular-s" href="#testimonial">Відгуки</a>
+              <a className="link regular-s" href="#testimonial">Відгуки</a>
             </li>
             <li>
-              <a className="regular-s" href="#testimonial">Контакти</a>
+              <a className="link regular-s" href="#testimonial">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -73,24 +73,35 @@ const Header = () => {
               transition={{duration: 0.2}}
             >
               <li>
-                <a className="regular-s" href="#content" onClick={toggleMenu}>Про мене</a>
+                <a className="link regular-s" href="#content" onClick={toggleMenu}>Про мене</a>
               </li>
               <li>
-                <a className="regular-s" href="#services" onClick={toggleMenu}>Спеціалізація</a>
+                <a className="link regular-s" href="#services" onClick={toggleMenu}>Спеціалізація</a>
               </li>
               <li>
-                <a className="regular-s" href="#process" onClick={toggleMenu}>Процес</a>
+                <a className="link regular-s" href="#process" onClick={toggleMenu}>Процес</a>
               </li>
               <li>
-                <a className="regular-s" href="#faq" onClick={toggleMenu}>Питання та відповіді</a>
+                <a className="link regular-s" href="#faq" onClick={toggleMenu}>Питання та відповіді</a>
               </li>
               <li>
-                <a className="regular-s" href="#testimonial" onClick={toggleMenu}>Відгуки</a>
+                <a className="link regular-s" href="#testimonial" onClick={toggleMenu}>Відгуки</a>
               </li>
               <li>
-                <a className="regular-s" href="#testimonial" onClick={toggleMenu}>Контакти</a>
+                <a className="link regular-s" href="#testimonial" onClick={toggleMenu}>Контакти</a>
               </li>
             </motion.ul>
+            <motion.a
+              target="_blank"
+              href="https://t.me/ViktoryKinesio"
+              className="button primary size-l"
+              initial={{translateY: '100%'}}
+              animate={{translateY: 0}}
+              exit={{translateY: '100%'}}
+              transition={{duration: 0.2}}
+            >
+              Запис на косультацію
+            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -121,7 +121,13 @@ footer {
   background-size: cover, contain;
 }
 
-.youtube {
+.telegram {
+  background-image: url('../../assets/images/telegram.svg');
+}
+
+.socials a span.youtube {
+  width: 25px;
+  height: 25px;
   background-image: url('../../assets/images/youtube.svg');
 }
 
@@ -129,8 +135,10 @@ footer {
   background-image: url('../../assets/images/instagram.svg');
 }
 
-.telegram {
-  background-image: url('../../assets/images/telegram.svg');
+.socials a span.facebook {
+  width: 22px;
+  height: 22px;
+  background-image: url('../../assets/images/facebook.svg');
 }
 
 .socials a:hover:before {
@@ -160,7 +168,7 @@ footer {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .description {
     flex-direction: column;
     gap: var(--space-3);

@@ -30,7 +30,7 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.description}>
           <div className={styles.outro}>
-            <a href="/" className={styles.logo}>
+            <a href="/" className={`link ${styles.logo}`}>
               <img src={logo} alt="logo"/>
             </a>
             <p>
@@ -38,26 +38,35 @@ const Footer = () => {
               я не обираю, що важливо, а що ні. Де я кажу, що все має значенні і все на все впливає.
             </p>
             <div className={styles.socials}>
-              <a className="icon-link" href="#"><span className={styles.youtube}></span></a>
-              <a className="icon-link" href="#"><span className={styles.telegram}></span></a>
-              <a className="icon-link" href="#"><span className={styles.instagram}></span></a>
+              <a className="icon-link" href="https://t.me/ViktoryKinesio" target="_blank">
+                <span className={styles.telegram}></span>
+              </a>
+              <a className="icon-link" href="https://www.youtube.com/@Viktory.kinesio" target="_blank">
+                <span className={styles.youtube}></span>
+              </a>
+              <a className="icon-link" href="https://www.instagram.com/viktory.kinesio" target="_blank">
+                <span className={styles.instagram}></span>
+              </a>
+              <a className="icon-link" href="https://www.facebook.com/ViktoryKinesio" target="_blank">
+                <span className={styles.facebook}></span>
+              </a>
             </div>
           </div>
           <ul className={styles.navigation_links}>
             <li>
-              <a className="regular-s reversed" href="#content">Про мене</a>
+              <a className="link regular-s reversed" href="#content">Про мене</a>
             </li>
             <li>
-              <a className="regular-s reversed" href="#services">Спеціалізація</a>
+              <a className="link regular-s reversed" href="#services">Спеціалізація</a>
             </li>
             <li>
-              <a className="regular-s reversed" href="#process">Процес</a>
+              <a className="link regular-s reversed" href="#process">Процес</a>
             </li>
             <li>
-              <a className="regular-s reversed" href="#faq">Питання та відповіді</a>
+              <a className="link regular-s reversed" href="#faq">Питання та відповіді</a>
             </li>
             <li>
-              <a className="regular-s reversed" href="#testimonial">Відгуки</a>
+              <a className="link regular-s reversed" href="#testimonial">Відгуки</a>
             </li>
           </ul>
           <div className={styles.location}>
